@@ -4,7 +4,8 @@ import 'clases/persona.dart';
 
 void main() {
 
-  final persona = new Persona(26, 'Francisco');
+  final persona = new Persona(edad: 25, nombre: 'Francisco');
+  final persona2 = new Persona.persona30('Bruce');
   // persona
     // ..nombre = 'Francisco'
     // ..edad = 26;
@@ -17,6 +18,7 @@ void main() {
   // print(persona.bio);
 
   print(persona);
+  print(persona2);
 
 }
 

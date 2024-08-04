@@ -10,10 +10,20 @@ class Persona {
   set bio(String text) => _bio = text;
 
   // constructores
-  Persona(int edad, String nombre) {
-    this.edad = edad;
-    this.nombre = nombre;
+  Persona({ required this.edad, this.nombre = 'Bruce' });
+
+  Persona.persona30(this.nombre) {
+    this.edad = 30;
   }
+
+  /**
+   * 
+   * Persona(int edad, String nombre) {
+   * this.edad = edad;
+   * this.nombre = nombre;
+   * }
+   * 
+   */
 
   // metodos
   @override
