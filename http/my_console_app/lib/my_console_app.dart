@@ -1,9 +1,17 @@
-int calculate() {
-  int a = 10;
-  int b = 20;
+import 'package:http/http.dart' as http;
 
-  a = 30;
-  b = 40;
+import 'classes/reqres.dart';
 
-  return a * b;
+void getReqResService() {
+  final Uri url = Uri.parse('https://reqres.in/api/users?page=2');
+  http.get(url).then((res) {
+    
+    final reqRes = reqResFromJson(res.body);
+
+    print(reqRes.page);
+    print(reqRes.perPage);
+    print(reqRes.data![2].id);
+
+  });
 }
+
