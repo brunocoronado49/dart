@@ -39,7 +39,7 @@ class Asteroide extends Astro with Logger, Logger2 {
 
 void main(List<String> args) {
 
-  final ceres = new Asteroide('Ceres');
+  //final ceres = new Asteroide('Ceres');
   
 }
 
