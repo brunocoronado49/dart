@@ -3,7 +3,7 @@
 void main(List<String> args) {
 
   List<int> lista = [1, 2, 3, 4, 5,];
-  List<int>? lista2;
+  // List<int>? lista2;
   List<int> lista3 = [3, 1, 2, 15, -10];
   List<String> nombre = ['Tony', 'Peter'];
 
@@ -13,8 +13,8 @@ void main(List<String> args) {
 
   print('IsEmpty: ${ lista.isEmpty }');
   print('IsNotEmpty: ${ lista.isNotEmpty }');
-  print('IsEmpty2: ${ lista2 == null }');
-  print('IsNotEmpty2: ${ lista2 != null }');
+  // print('IsEmpty2: ${ lista2 == null }');
+  // print('IsNotEmpty2: ${ lista2 != null }');
 
   print('AsMap: ${ lista.asMap() }');
   Map listaMapa = lista.asMap();
